@@ -4,8 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-PRODUCT_SOONG_NAMESPACES += \
-    vendor/motorola/extras
+#PRODUCT_SOONG_NAMESPACES += \
+#    vendor/motorola/extras
 
 # Motorola Additions for a better UI experience in Custom ROMs
 # Tested in Moto E5+
@@ -27,10 +27,6 @@ ifeq ($(MOTOEXTRAS_LIVEWALLS), true)
 PRODUCT_PACKAGES += \
     MotoLiveWallpaper2 \
     MotoLiveWallpaper3 
-endif
-
-ifeq ($(MOTOPARTS), true)
-$(call inherit-product, vendor/motorola/extras/MotoParts/Android.mk)
 endif
 
 ifeq ($(MOTOEXTRAS_WIDGET), true)
