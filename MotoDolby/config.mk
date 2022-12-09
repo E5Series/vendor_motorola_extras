@@ -1,6 +1,6 @@
 # Automatically generated file. DO NOT MODIFY
 
-$(call inherit-product, vendor/motorola/exrras/MotoDolby/motodolbyv3.mk)
+$(call inherit-product, vendor/motorola/extras/MotoDolby/motodolbyv3.mk)
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
